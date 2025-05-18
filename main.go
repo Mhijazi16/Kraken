@@ -22,8 +22,5 @@ func main() {
 		log.Fatal("Failed to connect:", err)
 	}
 
-	var servers []Server
-	if err := db.Find(&servers).Error; err != nil {
-		log.Fatal("Query failed:", err)
-	}
+	start_menu(db)
 }
