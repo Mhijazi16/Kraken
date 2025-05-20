@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 
 	"github.com/charmbracelet/huh"
@@ -27,5 +26,4 @@ func start_menu(db *gorm.DB) {
 		Value(&selected)
 
 	menu.Run()
-	fmt.Println(selected)
 }
